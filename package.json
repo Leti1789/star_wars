@@ -1,0 +1,12 @@
+{
+  "name": "star_wars",
+  "version": "1.0.0",
+  "description": "Microservicios, Docker, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
