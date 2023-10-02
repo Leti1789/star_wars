@@ -12,7 +12,7 @@ router.get("/:model", validateModel, async (req, res) => {
   res.status(200).json(response)
 })
 
-router.get("/:model/id", async (req, res) => {
+router.get("/:model/:id", async (req, res) => {
   const { model, id } = req.params;
   const response = await store[model].get(id)
   res.status(200).json(response)
