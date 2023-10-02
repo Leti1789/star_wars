@@ -35,4 +35,26 @@ planetSchema.statics.insert = async function (planet) {
   return await this.create(planet);
 }
 
+planetSchema.statics.update = async function (id, updatedPlanetData) {
+  return await this.findByIdAndUpdate(id, updatedPlanetData, { new: true })
+      .populate("homeworld", ["_id", "name"])
+      .populate("films", ["_id", "title"]);
+}
+
+// PATCH 
+planetSchema.statics.patch = async function (id, updatedData) {
+  return await this.findByIdAndUpdate(id, { $set: updatedData }, { new: true })
+      .populate("homeworld", ["_id", "name"])
+      .populate("films", ["_id", "title"]);
+}
+
+// DELETE 
+planetSchema.statics.delete = async function (id) {
+  return await this.findByIdAndDelete(id);
+}
+
+
+
+
+
 module.exports = planetSchema;

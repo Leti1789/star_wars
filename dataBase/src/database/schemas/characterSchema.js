@@ -32,8 +32,8 @@ characterSchema.statics.insert = async function (character) {
 
 
 // UPDATE (PUT - Actualizar un planeta completo)
-characterSchema.statics.update = async function (id, updatedPlanetData) {
-  return await this.findByIdAndUpdate(id, updatedPlanetData, { new: true })
+characterSchema.statics.update = async function (id, updatedCharacterData) {
+  return await this.findByIdAndUpdate(id, updatedCharacterData, { new: true })
       .populate("homeworld", ["_id", "name"])
       .populate("films", ["_id", "title"]);
 }
