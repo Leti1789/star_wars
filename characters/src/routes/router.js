@@ -1,17 +1,17 @@
 const {Router} = require("express")
-const controller = require("../Constroller")
+const controller = require("../controllers")
 
 
 const router = Router()
 
-route.get("/", controller.getCharacters);
+router.get("/", controller.getCharacters);
 
-route.get("/:id", controller.getCharacter);
+router.get("/:id", controller.getCharactersId);
 
-route.delete("/:id", controller.deleteCharacter);
+router.delete("/:id", controller.deleteCharacters);
 
-route.post("/", controller.createCharacters);
+router.post("/", controller.createCharacters);
 
-route.put("/:id", controller.updateCharacter);
+router.put("/:id", controller.updateCharacters);
 
-module.exports = router;s
+module.exports = router;

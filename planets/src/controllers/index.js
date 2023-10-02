@@ -1,4 +1,7 @@
 module.exports = {
   getPlanets: require("./getPlanets"),
-  createPlanets: require('./createPlanets')
+  getPlanetsId: require("./getPlanetsId"),
+  createPlanets: require('./createPlanets'),
+  updatePlanets: require("./updatePlanets"),
+  deletePlanets: require("./deletePlanets")
 }
