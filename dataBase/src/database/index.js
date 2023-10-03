@@ -15,7 +15,7 @@ const conn = mongoose.createConnection(MONGO_URI);
 //Planets.find().then((res)=> console.log(res))
 
 module.exports={
-    Character:conn.model("Character", require("./schemas/characterSchema")),
+     Character:conn.model("Character", require("./schemas/characterSchema")),
      Film: conn.model("Film", require("./schemas/filmSchema")),
      Planet: conn.model("Planet", require("./schemas/planetSchema"))
 }
