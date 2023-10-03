@@ -29,7 +29,7 @@ services:
   database:
     container_name: database
     restart: always
-    build: ./database
+    build: ./dataBase
     ports:
       - "8004:8004"
 
