@@ -98,4 +98,4 @@ Ejecuta el contenedor Docker en el servidor.
 
 Asegúrate de configurar el firewall y las reglas de seguridad para permitir el acceso a través del puerto 8000 (o el puerto que hayas configurado).
 
-El microservicio estará disponible en http://localhost:8000/
+El microservicio estará disponible en http://34.66.199.227:8000/
